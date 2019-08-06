@@ -1,5 +1,18 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="TestInteractionsTab.MainTabbedPage">
-    <ContentPage.Content>
-    </ContentPage.Content>
-</ContentPage>
+<rxui:ReactiveTabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+                         xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                         x:Class="TestInteractionsTab.MainTabbedPage"
+                         xmlns:local="clr-namespace:TestInteractionsTab"
+                         x:TypeArguments="local:MainTabbedViewModel"
+                         xmlns:rxui="clr-namespace:ReactiveUI.XamForms;assembly=ReactiveUI.XamForms">
+    <NavigationPage Title="Main">
+        <x:Arguments>
+            <local:MainPage x:Name="_mainPage" />
+        </x:Arguments>
+    </NavigationPage>
+    <NavigationPage Title="Secondary">
+        <x:Arguments>
+            <local:SecondaryPage x:Name="_secondaryPage" />
+        </x:Arguments>
+    </NavigationPage>
+</rxui:ReactiveTabbedPage>

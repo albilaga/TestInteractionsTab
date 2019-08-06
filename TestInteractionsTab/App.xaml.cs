@@ -1,7 +1,4 @@
-﻿using System;
-using Xamarin.Forms;
-using Xamarin.Forms.Xaml;
-
+﻿using Xamarin.Forms;
 namespace TestInteractionsTab
 {
     public partial class App : Application
@@ -9,8 +6,7 @@ namespace TestInteractionsTab
         public App()
         {
             InitializeComponent();
-
-            MainPage = new MainPage();
+            MainPage = new MainTabbedPage();
         }
 
         protected override void OnStart()

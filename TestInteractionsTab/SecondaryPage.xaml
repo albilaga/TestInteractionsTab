@@ -1,5 +1,15 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="TestInteractionsTab.SecondaryPage">
+<rxui:ReactiveContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+                          xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                          xmlns:local="clr-namespace:TestInteractionsTab"
+                          xmlns:rxui="clr-namespace:ReactiveUI.XamForms;assembly=ReactiveUI.XamForms"
+                          x:TypeArguments="local:SecondaryViewModel"
+                          x:Class="TestInteractionsTab.SecondaryPage">
     <ContentPage.Content>
+        <Grid>
+            <Label Text="Hello, this is secondary page"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center" />
+        </Grid>
     </ContentPage.Content>
-</ContentPage>
+</rxui:ReactiveContentPage>

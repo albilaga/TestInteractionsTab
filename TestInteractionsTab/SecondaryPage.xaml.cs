@@ -1,11 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-
-using Xamarin.Forms;
+﻿using ReactiveUI.XamForms;
 
 namespace TestInteractionsTab
 {
-    public partial class SecondaryPage : ContentPage
+    public partial class SecondaryPage : ReactiveContentPage<SecondaryViewModel>
     {
         public SecondaryPage()
         {
